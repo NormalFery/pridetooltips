@@ -1,4 +1,8 @@
 {
 	"tooltip": "MODRINTH_TOOLTIP_ORG_ID",
-	"hearts": "MODRINTH_HEARTS_ORG_ID"
+	"hearts": "MODRINTH_HEARTS_ORG_ID",
+	"cutoffs": {
+		"tooltip": "24w36a",
+		"hearts": "1.20.2"
+	}
 }

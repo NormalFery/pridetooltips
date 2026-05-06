@@ -1,3 +1,4 @@
+import os
 import re
 from enum import Enum
 from pathlib import Path
@@ -425,52 +426,58 @@ def update_mc_versions(ctx: typer.Context):
     settings = get_config(ctx)
 
     api = get_api(settings)
-    existing_projects, _ = fetch_org_projects(api, settings)
     game_versions = api.get_game_versions()
+    cutoffs = settings.get_org_cutoffs()
     queue = []
 
-    for slug, project in existing_projects.items():
-        local_data = None
-        local_dir_name = slug
+    orgs_data = settings.load_json(settings.orgs_path)
 
-        for p_dir in settings.build_dir.iterdir():
-            if not p_dir.is_dir():
-                continue
-            d = load_project_data(p_dir)
-            if d.get("slug") == slug:
-                local_data = d
-                local_dir_name = p_dir.name
-                break
-
-        if not local_data:
+    for org_key, org_env_key in orgs_data.items():
+        if org_key == "cutoffs":
             continue
 
-        def _update_vers_task(d=local_data, p=project, dirname=local_dir_name):
-            try:
-                if isinstance(p.get("versions"), list) and len(p.get("versions")) > 0:
-                    vid = p.get("versions")[len(p.get("versions")) - 1]
-                else:
+        org_id = os.getenv(org_env_key) if isinstance(org_env_key, str) else None
+        if not org_id:
+            logger.warning(f"Skipping org '{org_key}': env var not set")
+            continue
+
+        cutoff = cutoffs.get(org_key)
+        if not cutoff:
+            logger.warning(f"Skipping org '{org_key}': no cutoff defined in orgs.json")
+            continue
+
+        try:
+            projects = api.get_organization_projects(org_id)
+        except ModrinthAPIError as e:
+            logger.error(f"Failed to fetch projects for org '{org_key}': {e}")
+            continue
+
+        gv = get_game_versions_until_cutoff(cutoff, game_versions)
+
+        for project in projects:
+            slug = project.get("slug")
+            versions = project.get("versions", [])
+
+            if not versions:
+                logger.warning(f"[{slug}] No versions found, skipping.")
+                continue
+
+            latest_version_id = versions[-1]
+
+            def _update_vers_task(vid=latest_version_id, s=slug):
+                try:
+                    api.modify_version(vid, VersionUpdate(game_versions=gv))
+                    return {"slug": s, "dir_name": s, "success": True}
+                except ModrinthAPIError as e:
                     return {
-                        "slug": d["slug"],
+                        "slug": s,
+                        "dir_name": s,
                         "success": False,
-                        "ModrinthAPIError": "No versions found",
+                        "ModrinthAPIError": e,
                     }
 
-                gv = get_game_versions_until_cutoff(
-                    d["version_game_version_cutoff"], game_versions
-                )
-                api.modify_version(vid, VersionUpdate(game_versions=gv))
-                return {"slug": d["slug"], "dir_name": dirname, "success": True}
-            except ModrinthAPIError as e:
-                return {
-                    "slug": d["slug"],
-                    "dir_name": dirname,
-                    "success": False,
-                    "ModrinthAPIError": e,
-                }
-
-        logger.info(f"[{local_dir_name}] Queued for version list update...")
-        queue.append(_update_vers_task)
+            logger.info(f"[{slug}] Queued for version list update...")
+            queue.append(_update_vers_task)
 
     if queue:
         results = api.parallel_requests(queue)

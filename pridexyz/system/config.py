@@ -67,10 +67,12 @@ class Config:
         )
 
     def get_org_lookup(self) -> dict[str, str]:
-        orgs_env_lookup = self.load_json(self.orgs_path)
+        orgs_data = self.load_json(self.orgs_path)
         org_id_lookup = {}
 
-        for org_key, org_env_key in orgs_env_lookup.items():
+        for org_key, org_env_key in orgs_data.items():
+            if org_key == "cutoffs":
+                continue
             org_id = os.getenv(org_env_key)
             if org_id:
                 org_id_lookup[org_key] = org_id
@@ -80,6 +82,10 @@ class Config:
                 )
 
         return org_id_lookup
+
+    def get_org_cutoffs(self) -> dict[str, str]:
+        orgs_data = self.load_json(self.orgs_path)
+        return orgs_data.get("cutoffs", {})
 
     @staticmethod
     def load_json(path: Path):
