@@ -385,6 +385,110 @@
 			"#3d1a78"
 		]
 	},
+	"demigender": {
+		"version": 1,
+		"description_name": "Demigender Pride Flag",
+		"tooltip": {
+			"styles": [
+				"7clr-full",
+				"7clr-frame",
+				"7clr-frame-altbg"
+			]
+		},
+		"hearts": {
+			"styles": [
+				"7clr",
+				"7clr-vert"
+			]
+		},
+		"colors": [
+			"#7f7f7f",
+			"#c3c3c3",
+			"#fbff74",
+			"#ffffff",
+			"#fbff74",
+			"#c3c3c3",
+			"#7f7f7f"
+		]
+	},
+	"demigirl": {
+		"version": 1,
+		"description_name": "Demigirl Pride Flag",
+		"tooltip": {
+			"styles": [
+				"7clr-full",
+				"7clr-frame",
+				"7clr-frame-altbg"
+			]
+		},
+		"hearts": {
+			"styles": [
+				"7clr",
+				"7clr-vert"
+			]
+		},
+		"colors": [
+			"#7f7f7f",
+			"#c3c3c3",
+			"#feaec9",
+			"#ffffff",
+			"#feaec9",
+			"#c3c3c3",
+			"#7f7f7f"
+		]
+	},
+	"demiboy": {
+		"version": 1,
+		"description_name": "Demiboy Pride Flag",
+		"tooltip": {
+			"styles": [
+				"7clr-full",
+				"7clr-frame",
+				"7clr-frame-altbg"
+			]
+		},
+		"hearts": {
+			"styles": [
+				"7clr",
+				"7clr-vert"
+			]
+		},
+		"colors": [
+			"#7f7f7f",
+			"#c3c3c3",
+			"#9ad9ea",
+			"#ffffff",
+			"#9ad9ea",
+			"#c3c3c3",
+			"#7f7f7f"
+		]
+	},
+	"demiflux": {
+		"version": 1,
+		"description_name": "Demiflux Pride Flag",
+		"tooltip": {
+			"styles": [
+				"7clr-full",
+				"7clr-frame",
+				"7clr-frame-altbg"
+			]
+		},
+		"hearts": {
+			"styles": [
+				"7clr",
+				"7clr-vert"
+			]
+		},
+		"colors": [
+			"#7f7f7f",
+			"#c3c3c3",
+			"#ffb4b7",
+			"#f4f691",
+			"#9ad9ea",
+			"#c3c3c3",
+			"#7f7f7f"
+		]
+	},
 	"polyamory/0": {
 		"version": 1,
 		"description_name": "Polyamory Pride Flag",
@@ -455,6 +559,28 @@
 			"#b87fd4",
 			"#ffffff",
 			"#478253"
+		]
+	},
+	"nonhuman": {
+		"version": 1,
+		"description_name": "Nonhuman Unity Flag",
+		"tooltip": {
+			"styles": [
+				"3clr-full",
+				"3clr-frame",
+				"3clr-frame-altbg"
+			]
+		},
+		"hearts": {
+			"styles": [
+				"3clr",
+				"3clr-vert"
+			]
+		},
+		"colors": [
+			"#167948",
+			"#ffffff",
+			"#593c8f"
 		]
 	},
 	"lesbian/0": {
