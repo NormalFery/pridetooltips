@@ -258,9 +258,7 @@ class HeartsBuilder(Builder):
                 pack_gallery.alpha_composite(
                     full_default_blinking_sprite, (35 + (8 * 3), 32)
                 )
-                pack_gallery.alpha_composite(
-                    half_default_sprite, (35 + (8 * 3), 32)
-                )
+                pack_gallery.alpha_composite(half_default_sprite, (35 + (8 * 3), 32))
 
                 for i in range(0, 5):
                     pack_gallery.alpha_composite(
@@ -281,7 +279,13 @@ class HeartsBuilder(Builder):
                 # Save outputs
                 pack_png.save(build_zip_collect_path / "pack.png")
                 pack_png.save(build_out_path / f"{pack_name}.png")
-                pack_gallery.save(build_out_path / f"gallery_{pack_name}.webp", format="webp", optimize=True, quality=80, method=5)
+                pack_gallery.save(
+                    build_out_path / f"gallery_{pack_name}.webp",
+                    format="webp",
+                    optimize=True,
+                    quality=80,
+                    method=5,
+                )
 
                 # Compress
                 self.debug(f"Compressing and finalizing {pack_name}")

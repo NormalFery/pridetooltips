@@ -2,25 +2,24 @@ import os
 import re
 from enum import Enum
 from pathlib import Path
-from typing import List
 
 import typer
+from modrinth4py import (
+    ModrinthClient,
+    NewProject,
+    ProjectType,
+    SideSupport,
+    ModrinthAPIError,
+    GalleryImage,
+    ProjectUpdate,
+    VersionType,
+    NewVersion,
+    VersionUpdate,
+)
 
 from pridexyz.markdown import (
     markdown_with_frontmatter_to_dict,
     appy_modrinth_markdown_template,
-)
-from pridexyz.modrinth.api import ModrinthAPI, ModrinthAPIError, cut_game_versions_until
-from pridexyz.modrinth.types import (
-    NewProject,
-    ProjectType,
-    SideSupport,
-    ProjectUpdate,
-    GalleryImage,
-    NewVersion,
-    VersionType,
-    DictKV,
-    VersionUpdate,
 )
 from pridexyz.system.config import logger, Config, get_config
 
@@ -40,17 +39,17 @@ class CleanupMode(str, Enum):
     PUBLISHED = "published"
 
 
-def get_api(settings: Config) -> ModrinthAPI:
+def get_api(settings: Config) -> ModrinthClient:
     if not settings.modrinth_token or not settings.modrinth_api_url:
         logger.error("Missing Modrinth configuration in .env")
         raise typer.Exit(1)
 
-    return ModrinthAPI(
+    return ModrinthClient(
         token=settings.modrinth_token,
         api_url=settings.modrinth_api_url,
         user_agent=f"Pridecraft-Studios/pridexyz ({settings.build_user})",
-        enable_debug_logging=settings.mr_api_debug_logging,
-        enable_extended_debug_logging=settings.mr_api_extended_debug_logging,
+        debug=settings.mr_api_debug_logging,
+        verbose_debug=settings.mr_api_extended_debug_logging,
     )
 
 
@@ -62,7 +61,7 @@ def load_project_data(project_dir: Path) -> dict:
     return markdown_with_frontmatter_to_dict(md_file)
 
 
-def fetch_org_projects(api: ModrinthAPI, settings: Config) -> tuple[dict, dict]:
+def fetch_org_projects(api: ModrinthClient, settings: Config) -> tuple[dict, dict]:
     lookup = settings.get_org_lookup()
     projects = {}
 
@@ -75,13 +74,6 @@ def fetch_org_projects(api: ModrinthAPI, settings: Config) -> tuple[dict, dict]:
             logger.error(f"Failed to fetch organization projects: {e}")
 
     return projects, lookup
-
-
-def get_game_versions_until_cutoff(
-    cutoff_version: str, versions: List[DictKV]
-) -> List[str]:
-    cut_versions = cut_game_versions_until(cutoff_version, versions)
-    return [version["version"] for version in cut_versions]
 
 
 def check_files(project_dir: Path, data: dict) -> bool:
@@ -337,7 +329,7 @@ def publish(ctx: typer.Context):
     settings = get_config(ctx)
     api = get_api(settings)
     existing_projects, _ = fetch_org_projects(api, settings)
-    game_versions = api.get_game_versions()
+    api.get_game_versions()
 
     try:
         meta = settings.load_json(settings.meta_path)
@@ -377,9 +369,7 @@ def publish(ctx: typer.Context):
 
                 logger.debug(f"[{d['slug']}] Version name: {version_name}")
 
-                gv = get_game_versions_until_cutoff(
-                    d["version_game_version_cutoff"], game_versions
-                )
+                gv = api.get_game_versions_until(d["version_game_version_cutoff"])
 
                 result = api.create_version(
                     NewVersion(
@@ -426,7 +416,6 @@ def update_mc_versions(ctx: typer.Context):
     settings = get_config(ctx)
 
     api = get_api(settings)
-    game_versions = api.get_game_versions()
     cutoffs = settings.get_org_cutoffs()
     queue = []
 
@@ -452,7 +441,7 @@ def update_mc_versions(ctx: typer.Context):
             logger.error(f"Failed to fetch projects for org '{org_key}': {e}")
             continue
 
-        gv = get_game_versions_until_cutoff(cutoff, game_versions)
+        gv = api.get_game_versions_until(cutoff)
 
         for project in projects:
             slug = project.get("slug")
