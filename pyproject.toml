@@ -1,0 +1,23 @@
+[project]
+name = "pridexyz"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.14"
+dependencies = [
+    "colorlog>=6.10.1",
+    "colour-science>=0.4.7",
+    "networkx>=3.6.1",
+    "numpy>=2.4.6",
+    "pillow>=12.2.0",
+    "python-dotenv>=1.2.2",
+    "requests>=2.33.0",
+    "typer>=0.26.7",
+    "urllib3>=2.7.0",
+    "modrinth4py>=0.0.3"
+]
+
+[dependency-groups]
+dev = [
+    "ruff>=0.15.0",
+]

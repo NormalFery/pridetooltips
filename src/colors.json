@@ -9,6 +9,12 @@
 				"3clr-frame-altbg"
 			]
 		},
+		"hearts": {
+			"styles": [
+				"3clr",
+				"3clr-vert"
+			]
+		},
 		"colors": [
 			"#d60270",
 			"#9b4f96",
@@ -23,6 +29,12 @@
 				"3clr-full",
 				"3clr-frame",
 				"3clr-frame-altbg"
+			]
+		},
+		"hearts": {
+			"styles": [
+				"3clr",
+				"3clr-vert"
 			]
 		},
 		"colors": [
@@ -41,6 +53,11 @@
 				"mono-frame-altbg"
 			]
 		},
+		"hearts": {
+			"styles": [
+				"mono"
+			]
+		},
 		"colors": [
 			"#1bd96a"
 		]
@@ -53,6 +70,12 @@
 				"7clr-full",
 				"7clr-frame",
 				"7clr-frame-altbg"
+			]
+		},
+		"hearts": {
+			"styles": [
+				"7clr",
+				"7clr-vert"
 			]
 		},
 		"colors": [
@@ -75,6 +98,12 @@
 				"3clr-frame-altbg"
 			]
 		},
+		"hearts": {
+			"styles": [
+				"3clr",
+				"3clr-vert"
+			]
+		},
 		"colors": [
 			"#F714BA",
 			"#01D66A",
@@ -87,6 +116,10 @@
 		"tooltip": {
 			"styles": [
 				"split-mono-bg-frame"
+			]
+		},
+		"hearts": {
+			"styles": [
 			]
 		},
 		"colors": [
@@ -117,12 +150,42 @@
 				"5clr-frame-altbg"
 			]
 		},
+		"hearts": {
+			"styles": [
+				"5clr",
+				"5clr-vert",
+				"5clr-vert-alt"
+			]
+		},
 		"colors": [
 			"#018e71",
 			"#99e9c2",
 			"#ffffff",
 			"#7cafe3",
 			"#3b1379"
+		]
+	},
+	"nonbinary": {
+		"version": 2,
+		"description_name": "Non-binary Pride Flag",
+		"tooltip": {
+			"styles": [
+				"4clr-full",
+				"4clr-frame",
+				"4clr-frame-altbg"
+			]
+		},
+		"hearts": {
+			"styles": [
+				"4clr",
+				"4clr-vert"
+			]
+		},
+		"colors": [
+			"#FFF433",
+			"#FFF8E7",
+			"#9B59D0",
+			"#2D2D2D"
 		]
 	},
 	"asexual": {
@@ -133,6 +196,12 @@
 				"4clr-full",
 				"4clr-frame",
 				"4clr-frame-altbg"
+			]
+		},
+		"hearts": {
+			"styles": [
+				"4clr",
+				"4clr-vert"
 			]
 		},
 		"colors": [
@@ -152,6 +221,12 @@
 				"4clr-frame-altbg"
 			]
 		},
+		"hearts": {
+			"styles": [
+				"4clr",
+				"4clr-vert"
+			]
+		},
 		"colors": [
 			"#151847",
 			"#7657ae",
@@ -167,6 +242,13 @@
 				"5clr-full",
 				"5clr-frame",
 				"5clr-frame-altbg"
+			]
+		},
+		"hearts": {
+			"styles": [
+				"5clr",
+				"5clr-vert",
+				"5clr-vert-alt"
 			]
 		},
 		"colors": [
@@ -187,6 +269,13 @@
 				"5clr-frame-altbg"
 			]
 		},
+		"hearts": {
+			"styles": [
+				"5clr",
+				"5clr-vert",
+				"5clr-vert-alt"
+			]
+		},
 		"colors": [
 			"#3f9f52",
 			"#97cf7c",
@@ -203,6 +292,13 @@
 				"5clr-full",
 				"5clr-frame",
 				"5clr-frame-altbg"
+			]
+		},
+		"hearts": {
+			"styles": [
+				"5clr",
+				"5clr-vert",
+				"5clr-vert-alt"
 			]
 		},
 		"colors": [
@@ -223,6 +319,13 @@
 				"5clr-frame-altbg"
 			]
 		},
+		"hearts": {
+			"styles": [
+				"5clr",
+				"5clr-vert",
+				"5clr-vert-alt"
+			]
+		},
 		"colors": [
 			"#5f2263",
 			"#b69ed0",
@@ -239,6 +342,13 @@
 				"5clr-full",
 				"5clr-frame",
 				"5clr-frame-altbg"
+			]
+		},
+		"hearts": {
+			"styles": [
+				"5clr",
+				"5clr-vert",
+				"5clr-vert-alt"
 			]
 		},
 		"colors": [
@@ -259,6 +369,12 @@
 				"7clr-frame-altbg"
 			]
 		},
+		"hearts": {
+			"styles": [
+				"7clr",
+				"7clr-vert"
+			]
+		},
 		"colors": [
 			"#018e71",
 			"#26ceaa",
@@ -269,6 +385,110 @@
 			"#3d1a78"
 		]
 	},
+	"demigender": {
+		"version": 1,
+		"description_name": "Demigender Pride Flag",
+		"tooltip": {
+			"styles": [
+				"7clr-full",
+				"7clr-frame",
+				"7clr-frame-altbg"
+			]
+		},
+		"hearts": {
+			"styles": [
+				"7clr",
+				"7clr-vert"
+			]
+		},
+		"colors": [
+			"#7f7f7f",
+			"#c3c3c3",
+			"#fbff74",
+			"#ffffff",
+			"#fbff74",
+			"#c3c3c3",
+			"#7f7f7f"
+		]
+	},
+	"demigirl": {
+		"version": 1,
+		"description_name": "Demigirl Pride Flag",
+		"tooltip": {
+			"styles": [
+				"7clr-full",
+				"7clr-frame",
+				"7clr-frame-altbg"
+			]
+		},
+		"hearts": {
+			"styles": [
+				"7clr",
+				"7clr-vert"
+			]
+		},
+		"colors": [
+			"#7f7f7f",
+			"#c3c3c3",
+			"#feaec9",
+			"#ffffff",
+			"#feaec9",
+			"#c3c3c3",
+			"#7f7f7f"
+		]
+	},
+	"demiboy": {
+		"version": 1,
+		"description_name": "Demiboy Pride Flag",
+		"tooltip": {
+			"styles": [
+				"7clr-full",
+				"7clr-frame",
+				"7clr-frame-altbg"
+			]
+		},
+		"hearts": {
+			"styles": [
+				"7clr",
+				"7clr-vert"
+			]
+		},
+		"colors": [
+			"#7f7f7f",
+			"#c3c3c3",
+			"#9ad9ea",
+			"#ffffff",
+			"#9ad9ea",
+			"#c3c3c3",
+			"#7f7f7f"
+		]
+	},
+	"demiflux": {
+		"version": 1,
+		"description_name": "Demiflux Pride Flag",
+		"tooltip": {
+			"styles": [
+				"7clr-full",
+				"7clr-frame",
+				"7clr-frame-altbg"
+			]
+		},
+		"hearts": {
+			"styles": [
+				"7clr",
+				"7clr-vert"
+			]
+		},
+		"colors": [
+			"#7f7f7f",
+			"#c3c3c3",
+			"#ffb4b7",
+			"#f4f691",
+			"#9ad9ea",
+			"#c3c3c3",
+			"#7f7f7f"
+		]
+	},
 	"polyamory/0": {
 		"version": 1,
 		"description_name": "Polyamory Pride Flag",
@@ -277,6 +497,13 @@
 				"5clr-full",
 				"5clr-frame",
 				"5clr-frame-altbg"
+			]
+		},
+		"hearts": {
+			"styles": [
+				"5clr",
+				"5clr-vert",
+				"5clr-vert-alt"
 			]
 		},
 		"colors": [
@@ -297,6 +524,13 @@
 				"5clr-frame-altbg"
 			]
 		},
+		"hearts": {
+			"styles": [
+				"5clr",
+				"5clr-vert",
+				"5clr-vert-alt"
+			]
+		},
 		"colors": [
 			"#ff76a3",
 			"#f5f5f5",
@@ -315,10 +549,38 @@
 				"3clr-frame-altbg"
 			]
 		},
+		"hearts": {
+			"styles": [
+				"3clr",
+				"3clr-vert"
+			]
+		},
 		"colors": [
 			"#b87fd4",
 			"#ffffff",
 			"#478253"
+		]
+	},
+	"nonhuman": {
+		"version": 1,
+		"description_name": "Nonhuman Unity Flag",
+		"tooltip": {
+			"styles": [
+				"3clr-full",
+				"3clr-frame",
+				"3clr-frame-altbg"
+			]
+		},
+		"hearts": {
+			"styles": [
+				"3clr",
+				"3clr-vert"
+			]
+		},
+		"colors": [
+			"#167948",
+			"#ffffff",
+			"#593c8f"
 		]
 	},
 	"lesbian/0": {
@@ -329,6 +591,13 @@
 				"5clr-full",
 				"5clr-frame",
 				"5clr-frame-altbg"
+			]
+		},
+		"hearts": {
+			"styles": [
+				"5clr",
+				"5clr-vert",
+				"5clr-vert-alt"
 			]
 		},
 		"colors": [
@@ -349,6 +618,12 @@
 				"7clr-frame-altbg"
 			]
 		},
+		"hearts": {
+			"styles": [
+				"7clr",
+				"7clr-vert"
+			]
+		},
 		"colors": [
 			"#d52d00",
 			"#ef7627",
@@ -359,6 +634,53 @@
 			"#a30262"
 		]
 	},
+	"sapphic/0": {
+		"version": 1,
+		"description_name": "Sapphic Pride Flag",
+		"tooltip": {
+			"styles": [
+				"5clr-full",
+				"5clr-frame",
+				"5clr-frame-altbg"
+			]
+		},
+		"hearts": {
+			"styles": [
+				"5clr",
+				"5clr-vert",
+				"5clr-vert-alt"
+			]
+		},
+		"colors": [
+			"#fd8caa",
+			"#fbf2fa",
+			"#c86bc6",
+			"#fbf2fa",
+			"#fd8caa"
+		]
+	},
+	"sapphic/1": {
+		"version": 1,
+		"description_name": "Sapphic Pride Flag",
+		"tooltip": {
+			"styles": [
+				"3clr-full",
+				"3clr-frame",
+				"3clr-frame-altbg"
+			]
+		},
+		"hearts": {
+			"styles": [
+				"3clr",
+				"3clr-vert"
+			]
+		},
+		"colors": [
+			"#fd8caa",
+			"#fbf2fa",
+			"#c86bc6"
+		]
+	},
 	"transgender/0": {
 		"version": 1,
 		"description_name": "Transgender Pride Flag",
@@ -367,6 +689,13 @@
 				"5clr-full",
 				"5clr-frame",
 				"5clr-frame-altbg"
+			]
+		},
+		"hearts": {
+			"styles": [
+				"5clr",
+				"5clr-vert",
+				"5clr-vert-alt"
 			]
 		},
 		"colors": [
@@ -387,6 +716,12 @@
 				"3clr-frame-altbg"
 			]
 		},
+		"hearts": {
+			"styles": [
+				"3clr",
+				"3clr-vert"
+			]
+		},
 		"colors": [
 			"#5bcffa",
 			"#f5abb9",
@@ -401,6 +736,12 @@
 				"7clr-full",
 				"7clr-frame",
 				"7clr-frame-altbg"
+			]
+		},
+		"hearts": {
+			"styles": [
+				"7clr",
+				"7clr-vert"
 			]
 		},
 		"colors": [
@@ -423,6 +764,12 @@
 				"7clr-frame-altbg"
 			]
 		},
+		"hearts": {
+			"styles": [
+				"7clr",
+				"7clr-vert"
+			]
+		},
 		"colors": [
 			"#c982a5",
 			"#edaacb",
@@ -443,6 +790,11 @@
 				"mono-frame-altbg"
 			]
 		},
+		"hearts": {
+			"styles": [
+				"mono"
+			]
+		},
 		"colors": [
 			"#0038a8"
 		]
@@ -455,6 +807,11 @@
 				"mono-full",
 				"mono-frame",
 				"mono-frame-altbg"
+			]
+		},
+		"hearts": {
+			"styles": [
+				"mono"
 			]
 		},
 		"colors": [
@@ -471,6 +828,11 @@
 				"mono-frame-altbg"
 			]
 		},
+		"hearts": {
+			"styles": [
+				"mono"
+			]
+		},
 		"colors": [
 			"#9ff902"
 		]
@@ -485,6 +847,11 @@
 				"mono-frame-altbg"
 			]
 		},
+		"hearts": {
+			"styles": [
+				"mono"
+			]
+		},
 		"colors": [
 			"#d52d00"
 		]
@@ -497,6 +864,11 @@
 				"mono-full",
 				"mono-frame",
 				"mono-frame-altbg"
+			]
+		},
+		"hearts": {
+			"styles": [
+				"mono"
 			]
 		},
 		"colors": [
@@ -526,6 +898,11 @@
 				"mono-frame-altbg"
 			]
 		},
+		"hearts": {
+			"styles": [
+				"mono"
+			]
+		},
 		"colors": [
 			"#00ff00"
 		]
@@ -540,6 +917,11 @@
 				"mono-frame-altbg"
 			]
 		},
+		"hearts": {
+			"styles": [
+				"mono"
+			]
+		},
 		"colors": [
 			"#7bade2"
 		]
@@ -552,6 +934,11 @@
 				"mono-full",
 				"mono-frame",
 				"mono-frame-altbg"
+			]
+		},
+		"hearts": {
+			"styles": [
+				"mono"
 			]
 		},
 		"colors": [
@@ -581,6 +968,11 @@
 				"mono-frame-altbg"
 			]
 		},
+		"hearts": {
+			"styles": [
+				"mono"
+			]
+		},
 		"colors": [
 			"#ffd800"
 		]
@@ -595,11 +987,16 @@
 				"mono-frame-altbg"
 			]
 		},
+		"hearts": {
+			"styles": [
+				"mono"
+			]
+		},
 		"colors": [
 			"#232323"
 		]
 	},
-	"black/0": {
+	"black": {
 		"version": 1,
 		"description_name": "Black",
 		"tooltip": {
@@ -609,20 +1006,12 @@
 				"mono-frame-altbg"
 			]
 		},
-		"colors": [
-			"#000000"
-		]
-	},
-	"black/1": {
-		"version": 1,
-		"description_name": "Black",
-		"tooltip": {
+		"hearts": {
 			"styles": [
-				"split-mono-bg-frame"
+				"mono"
 			]
 		},
 		"colors": [
-			"#000000",
 			"#000000"
 		]
 	},
@@ -634,6 +1023,11 @@
 				"mono-full",
 				"mono-frame",
 				"mono-frame-altbg"
+			]
+		},
+		"hearts": {
+			"styles": [
+				"mono"
 			]
 		},
 		"colors": [
@@ -676,6 +1070,11 @@
 				"mono-frame-altbg"
 			]
 		},
+		"hearts": {
+			"styles": [
+				"mono"
+			]
+		},
 		"colors": [
 			"#eae8ca"
 		]
@@ -701,6 +1100,11 @@
 				"mono-full",
 				"mono-frame",
 				"mono-frame-altbg"
+			]
+		},
+		"hearts": {
+			"styles": [
+				"mono"
 			]
 		},
 		"colors": [
@@ -743,6 +1147,11 @@
 				"mono-frame-altbg"
 			]
 		},
+		"hearts": {
+			"styles": [
+				"mono"
+			]
+		},
 		"colors": [
 			"#f5abb9"
 		]
@@ -755,6 +1164,11 @@
 				"mono-full",
 				"mono-frame",
 				"mono-frame-altbg"
+			]
+		},
+		"hearts": {
+			"styles": [
+				"mono"
 			]
 		},
 		"colors": [
@@ -771,6 +1185,11 @@
 				"mono-frame-altbg"
 			]
 		},
+		"hearts": {
+			"styles": [
+				"mono"
+			]
+		},
 		"colors": [
 			"#00ffff"
 		]
@@ -783,6 +1202,11 @@
 				"mono-full",
 				"mono-frame",
 				"mono-frame-altbg"
+			]
+		},
+		"hearts": {
+			"styles": [
+				"mono"
 			]
 		},
 		"colors": [
@@ -799,6 +1223,11 @@
 				"mono-frame-altbg"
 			]
 		},
+		"hearts": {
+			"styles": [
+				"mono"
+			]
+		},
 		"colors": [
 			"#bababa"
 		]
@@ -813,8 +1242,32 @@
 				"mono-frame-altbg"
 			]
 		},
+		"hearts": {
+			"styles": [
+				"mono"
+			]
+		},
 		"colors": [
 			"#000080"
+		]
+	},
+	"lime": {
+		"version": 1,
+		"description_name": "Lime Green",
+		"tooltip": {
+			"styles": [
+				"mono-full",
+				"mono-frame",
+				"mono-frame-altbg"
+			]
+		},
+		"hearts": {
+			"styles": [
+				"mono"
+			]
+		},
+		"colors": [
+			"#9afda4"
 		]
 	},
 	"raspberry": {
@@ -825,6 +1278,11 @@
 				"mono-full",
 				"mono-frame",
 				"mono-frame-altbg"
+			]
+		},
+		"hearts": {
+			"styles": [
+				"mono"
 			]
 		},
 		"colors": [
@@ -841,6 +1299,11 @@
 				"mono-frame-altbg"
 			]
 		},
+		"hearts": {
+			"styles": [
+				"mono"
+			]
+		},
 		"colors": [
 			"#ed91b6"
 		]
@@ -855,8 +1318,32 @@
 				"mono-frame-altbg"
 			]
 		},
+		"hearts": {
+			"styles": [
+				"mono"
+			]
+		},
 		"colors": [
 			"#ffd7fc"
+		]
+	},
+	"pink": {
+		"version": 1,
+		"description_name": "Pink",
+		"tooltip": {
+			"styles": [
+				"mono-full",
+				"mono-frame",
+				"mono-frame-altbg"
+			]
+		},
+		"hearts": {
+			"styles": [
+				"mono"
+			]
+		},
+		"colors": [
+			"#fd2eb1"
 		]
 	},
 	"lilac": {
@@ -867,6 +1354,11 @@
 				"mono-full",
 				"mono-frame",
 				"mono-frame-altbg"
+			]
+		},
+		"hearts": {
+			"styles": [
+				"mono"
 			]
 		},
 		"colors": [
@@ -883,6 +1375,11 @@
 				"mono-frame-altbg"
 			]
 		},
+		"hearts": {
+			"styles": [
+				"mono"
+			]
+		},
 		"colors": [
 			"#bee1e3"
 		]
@@ -895,6 +1392,11 @@
 				"mono-full",
 				"mono-frame",
 				"mono-frame-altbg"
+			]
+		},
+		"hearts": {
+			"styles": [
+				"mono"
 			]
 		},
 		"colors": [
@@ -911,18 +1413,29 @@
 				"mono-frame-altbg"
 			]
 		},
+		"hearts": {
+			"styles": [
+				"mono"
+			]
+		},
 		"colors": [
 			"#a7fcdb"
 		]
 	},
 	"rainbow": {
 		"version": 1,
-		"description_name": "Rainbow",
+		"description_name": "Pastel Rainbow",
 		"tooltip": {
 			"styles": [
 				"7clr-full",
 				"7clr-frame",
 				"7clr-frame-altbg"
+			]
+		},
+		"hearts": {
+			"styles": [
+				"7clr",
+				"7clr-vert"
 			]
 		},
 		"colors": [
@@ -935,6 +1448,32 @@
 			"#dc8cd8"
 		]
 	},
+	"pride1978": {
+		"version": 1,
+		"description_name": "1978 Pride Flag",
+		"tooltip": {
+			"styles": [
+				"7clr-full",
+				"7clr-frame",
+				"7clr-frame-altbg"
+			]
+		},
+		"hearts": {
+			"styles": [
+				"7clr",
+				"7clr-vert"
+			]
+		},
+		"colors": [
+			"#fc3b65",
+			"#fe8e7e",
+			"#fdfeb3",
+			"#008f58",
+			"#0ac1c1",
+			"#3e0099",
+			"#8e1c8f"
+		]
+	},
 	"seagreen": {
 		"version": 1,
 		"description_name": "Sea Green",
@@ -943,6 +1482,11 @@
 				"mono-full",
 				"mono-frame",
 				"mono-frame-altbg"
+			]
+		},
+		"hearts": {
+			"styles": [
+				"mono"
 			]
 		},
 		"colors": [
@@ -959,6 +1503,11 @@
 				"mono-frame-altbg"
 			]
 		},
+		"hearts": {
+			"styles": [
+				"mono"
+			]
+		},
 		"colors": [
 			"#ccfca6"
 		]
@@ -971,6 +1520,11 @@
 				"mono-full",
 				"mono-frame",
 				"mono-frame-altbg"
+			]
+		},
+		"hearts": {
+			"styles": [
+				"mono"
 			]
 		},
 		"colors": [
@@ -987,6 +1541,11 @@
 				"mono-frame-altbg"
 			]
 		},
+		"hearts": {
+			"styles": [
+				"mono"
+			]
+		},
 		"colors": [
 			"#ead376"
 		]
@@ -999,6 +1558,11 @@
 				"mono-full",
 				"mono-frame",
 				"mono-frame-altbg"
+			]
+		},
+		"hearts": {
+			"styles": [
+				"mono"
 			]
 		},
 		"colors": [
@@ -1015,6 +1579,11 @@
 				"mono-frame-altbg"
 			]
 		},
+		"hearts": {
+			"styles": [
+				"mono"
+			]
+		},
 		"colors": [
 			"#f1956e"
 		]
@@ -1029,8 +1598,32 @@
 				"mono-frame-altbg"
 			]
 		},
+		"hearts": {
+			"styles": [
+				"mono"
+			]
+		},
 		"colors": [
 			"#997d65"
+		]
+	},
+	"brown": {
+		"version": 1,
+		"description_name": "Brown",
+		"tooltip": {
+			"styles": [
+				"mono-full",
+				"mono-frame",
+				"mono-frame-altbg"
+			]
+		},
+		"hearts": {
+			"styles": [
+				"mono"
+			]
+		},
+		"colors": [
+			"#b75752"
 		]
 	},
 	"neptuneblue": {
@@ -1041,6 +1634,11 @@
 				"mono-full",
 				"mono-frame",
 				"mono-frame-altbg"
+			]
+		},
+		"hearts": {
+			"styles": [
+				"mono"
 			]
 		},
 		"colors": [
@@ -1057,6 +1655,11 @@
 				"mono-frame-altbg"
 			]
 		},
+		"hearts": {
+			"styles": [
+				"mono"
+			]
+		},
 		"colors": [
 			"#0EA7A5"
 		]
@@ -1071,8 +1674,95 @@
 				"mono-frame-altbg"
 			]
 		},
+		"hearts": {
+			"styles": [
+				"mono"
+			]
+		},
 		"colors": [
 			"#006400"
 		]
+	},
+	"pride-bright": {
+		"version": 1,
+		"description_name": "Pride Flag (Bright Rainbow)",
+		"tooltip": {
+			"styles": [
+				"6clr-full",
+				"6clr-frame",
+				"6clr-frame-altbg"
+			]
+		},
+		"hearts": {
+			"styles": [
+				"6clr",
+				"6clr-vert"
+			]
+		},
+		"colors": [
+			"#d63c30",
+			"#e57e33",
+			"#f3ea49",
+			"#3bc41b",
+			"#2476ca",
+			"#ba00a1"
+		]
+	},
+	"pride": {
+		"version": 1,
+		"description_name": "Pride Flag (Rainbow)",
+		"tooltip": {
+			"styles": [
+				"6clr-full",
+				"6clr-frame",
+				"6clr-frame-altbg"
+			]
+		},
+		"hearts": {
+			"styles": [
+				"6clr",
+				"6clr-vert"
+			]
+		},
+		"colors": [
+			"#e60805",
+			"#ff8e08",
+			"#ffef0c",
+			"#00821b",
+			"#104aff",
+			"#780089"
+		]
+	},
+	"$deprecated": {
+		"black/1": {
+			"version": 1,
+			"description_name": "Black",
+			"tooltip": {
+				"styles": [
+					"split-mono-bg-frame"
+				]
+			},
+			"colors": [
+				"#000000",
+				"#000000"
+			]
+		},
+		"nonbinary-alt": {
+			"version": 1,
+			"description_name": "Alt Non-binary Pride Flag",
+			"tooltip": {
+				"styles": [
+					"4clr-full",
+					"4clr-frame",
+					"4clr-frame-altbg"
+				]
+			},
+			"colors": [
+				"#FFF433",
+				"#FFF8E7",
+				"#9B59D0",
+				"#2D2D2D"
+			]
+		}
 	}
 }

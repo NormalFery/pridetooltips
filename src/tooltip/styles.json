@@ -45,9 +45,9 @@
 		}
 	},
 	"3clr-frame-altbg": {
-		"description_name": "Frame-only Tricolor",
+		"description_name": "Frame-only Alt-BG Tricolor",
 		"explanation": "A simple tricolor flag with three colors. This style only applies the colors to the frame, leaving the background as the default Minecraft texture",
-		"version": 1,
+		"version": 2,
 		"expects": 3,
 		"background": {
 			"before": [
@@ -94,7 +94,7 @@
 	"4clr-frame": {
 		"description_name": "Frame-only 4-Color",
 		"explanation": "A simple 4-color flag with four colors. This style only applies the colors to the frame, leaving the background black",
-		"version": 1,
+		"version": 2,
 		"expects": 4,
 		"background": {
 			"before": [
@@ -108,7 +108,7 @@
 				"#00FF00",
 				"#0000FF"
 			],
-			"template": "5color/uniform/frame.png"
+			"template": "4color/uniform/frame.png"
 		}
 	},
 	"4clr-frame-altbg": {
@@ -281,6 +281,82 @@
 				"#FFFFFF"
 			],
 			"template": "7color/uniform/frame.png"
+		}
+	},
+	"6clr-full": {
+		"description_name": "6-Color",
+		"explanation": "A simple 6-color flag with six colors",
+		"version": 1,
+		"expects": 6,
+		"background": {
+			"before": [
+				"common/background_dark_compose.png"
+			],
+			"templating_colors": [
+				"#FF0000",
+				"#FFFF00",
+				"#00FF00",
+				"#0000FF",
+				"#FF00FF",
+				"#00FFFF"
+			],
+			"template": "6color/uniform/background_colors.png"
+		},
+		"frame": {
+			"templating_colors": [
+				"#FF0000",
+				"#FFFF00",
+				"#00FF00",
+				"#0000FF",
+				"#FF00FF",
+				"#00FFFF"
+			],
+			"template": "6color/uniform/frame.png"
+		},
+		"merge_background_into_frame": true
+	},
+	"6clr-frame": {
+		"description_name": "Frame-only 6-Color",
+		"explanation": "A simple 6-color flag with six colors. This style only applies the colors to the frame, leaving the background black",
+		"version": 1,
+		"expects": 6,
+		"background": {
+			"before": [
+				"common/background_dark.png"
+			]
+		},
+		"frame": {
+			"templating_colors": [
+				"#FF0000",
+				"#FFFF00",
+				"#00FF00",
+				"#0000FF",
+				"#FF00FF",
+				"#00FFFF"
+			],
+			"template": "6color/uniform/frame.png"
+		}
+	},
+	"6clr-frame-altbg": {
+		"description_name": "Frame-only Alt-BG 6-Color",
+		"explanation": "A simple 6-color flag with six colors. This style only applies the colors to the frame, leaving the background as the default Minecraft texture",
+		"version": 1,
+		"expects": 6,
+		"background": {
+			"before": [
+				"common/background_default.png"
+			]
+		},
+		"frame": {
+			"templating_colors": [
+				"#FF0000",
+				"#FFFF00",
+				"#00FF00",
+				"#0000FF",
+				"#FF00FF",
+				"#00FFFF"
+			],
+			"template": "6color/uniform/frame.png"
 		}
 	},
 	"mono-full": {

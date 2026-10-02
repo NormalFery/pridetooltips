@@ -1,6 +1,14 @@
 {
-	"global_version": 3,
-	"redundant_removable_info": " Tooltip",
+	"tooltip": {
+		"global_version": 4
+	},
+	"hearts": {
+		"global_version": 1
+	},
+	"removable": [
+		" Tooltip",
+		" Hearts"
+	],
 	"shortenable": {
 		"Frame-only": "Fr...",
 		"Alt-BG": "A...",
